@@ -14,11 +14,16 @@
         .container {
             /* background-color: lightblue; */
         }
+        
+        .far {
+            color: brown;
+        }
     </style>
     <!-- Bootsrap en local  -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Bootstrap CSS en CDN-->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/c746aa2dc1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -43,7 +48,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
+                            Pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="page1.html">Page 1</a>
@@ -74,30 +79,39 @@
                     </ol>
 
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-interval="2000">
                             <img src="img/facade.jpg" class="d-block w-100" alt="décors : géométrique">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Décor 1</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-interval="6000">
                             <img src="img/mosaîque.jpg" class="d-block w-100" alt="décors: mosaîque">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Décor 2</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-interval="3000">
                             <img src="img/immeuble.jpg" class="d-block w-100" alt="décors: façade">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Décor 3</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
                         </div>
                     </div>
-
 
                     <a class="carousel-control-prev" href="#monCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Précédente</span>
                     </a>
-
                     <a class="carousel-control-next" href="#monCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Suivante</span>
                     </a>
                     <!-- fermeture div id carousel -->
                 </div>
-
 
             </div>
             <!-- fermeture de la div col 12 -->
