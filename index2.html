@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+​
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> ​
+    <title>Décors</title>
+    ​
+    <style>
+        ​ .carousel-control-prev,
+        .carousel-control-next {
+            background: rgba(137, 145, 187, 0.8);
+        }
+        
+        ​ .carousel-caption {
+            background: rgba(152, 117, 172, 0.7);
+            border-radius: 10px;
+        }
+        
+        ​ .bleu {
+            background: #3a60a7;
+        }
+        
+        ​ .vert {
+            background: #2a8639;
+        }
+    </style>
+
+    <!-- Bootstrap en local -->
+    <link rel="stylesheet" href="css/bootstrap.css"> ​
+    <!-- Bootstrap CSS en CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    ​
+    <!-- la nav bar de notre site -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- la div container contient le contenu de la nav et le container n'est pas "fluid" -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Décors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">En vedette</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prix</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="page1.html">Page 1</a>
+                            <a class="dropdown-item" href="#">Page 2</a>
+                            <a class="dropdown-item" href="#">Page 3</a>
+                            <a class="dropdown-item" href="#">Page 4</a>
+                            <a class="dropdown-item" href="#">Page 5</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fermeture div container -->
+        </div>
+    </nav>
+    ​
+    <!-- le premier container avec notre carousel (ou diaporama ou slider) -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <!-- le carousel -->
+                <div id="monCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- les indicateurs -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#monCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#monCarousel" data-slide-to="1"></li>
+                        <li data-target="#monCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="img/facade.jpg" class="d-block w-100" alt="Décors : géométrique">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Slide 1</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="img/mosaique.jpg" class="d-block w-100" alt="Décors : mosaique">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Slide 2</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="img/immeuble.jpg" class="d-block w-100" alt="Décors : façade">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Slide 3</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- les flèches de contrôle du carousel -->
+                    <a class="carousel-control-prev" href="#monCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                    </a>
+                    <a class="carousel-control-next" href="#monCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                    <!-- fermeture div id carousel -->
+                </div>
+                <!-- fermeture col-12 -->
+            </div>
+            <!-- fermeture row -->
+        </div>
+        <!-- fermeture container du slider -->
+    </div>
+    ​
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-4 bg-secondary">Colonne</div>
+            <div class="col-4 bg-primary">Colonne</div>
+            <div class="col-4 bg-warning">Colonne</div>
+        </div>
+    </div>
+    ​
+    <!-- les scripts en local -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    ​ ​ ​
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script> -->
+    ​
+</body>
+​
+
+</html>
