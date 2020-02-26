@@ -11,90 +11,82 @@
     <script src="https://kit.fontawesome.com/c746aa2dc1.js" crossorigin="anonymous"></script>
     <!-- style perso est chargé en second pour venir modifier le style de bootstrap.css après le chargement de celui ci -->
     <link rel="stylesheet" href="css/style03.css">
-    <style>
-        #txt {
-            margin: 0 auto;
-            border: 2px solid grey;
-            border-radius: 8%;
-            width: 80px;
-            margin-bottom: 2px;
-            padding-left: 6px;
-            padding-top: 2px;
-            box-shadow: 4px 6px 2px 1px rgba(87, 84, 76, 0.2);
-            background-color: rgb(254, 254, 254);
-            color: rgb(43, 6, 70);
-        }
-    </style>
 </head>
 
 <body>
-    <div class="conteneur">
-        <!-- deux types de conteneurs adaptatifs (.container) ou fluide (.container fluide) -->
-        <div class="contour container1">
-            <header>
-                <div class="row">
-                    <div class="col-4 logo"><span>LOGO</span>
-                    </div>
-                    <div class="col-8 banniere"><span>BANNIÈRE</span>
-                    </div>
-                    <div class="col-2 menu1"><a href="#">Menu 1</a>
-                    </div>
-                    <div class="col-2 menu2"><a href="#">Menu 2</a>
-                    </div>
-                    <div class="col-2 menu1"><a href="#">Menu 3</a>
-                    </div>
-                    <div class="col-2 menu2"><a href="#">Menu 4</a>
-                    </div>
-                    <div class="col-2 menu1"><a href="#">Menu 5</a>
-                    </div>
-                    <div class="col-2 menu2"><a href="#">Menu 6</a>
+
+    <!-- deux types de conteneurs adaptatifs (.container) ou fluide (.container fluide) -->
+    <div class="contour container haut">
+        <header>
+            <div class="row">
+                <div class="col-4 logo"><span>LOGO</span>
+                </div>
+                <div class="col-8 banniere"><span>BANNIÈRE</span>
+                </div>
+                <div class="col-2 menu1"><a href="#">Menu 1</a>
+                </div>
+                <div class="col-2 menu2"><a href="#">Menu 2</a>
+                </div>
+                <div class="col-2 menu1"><a href="#">Menu 3</a>
+                </div>
+                <div class="col-2 menu2"><a href="#">Menu 4</a>
+                </div>
+                <div class="col-2 menu1"><a href="#">Menu 5</a>
+                </div>
+                <div class="col-2 menu2"><a href="#">Menu 6</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <div class="contour container milieu"> -->
+            <div class="row">
+                <div class="col-4 colonneg">
+                    <li>
+                        <h5>COLONNE A</h5>
+                    </li>
+                    <li>
+                        <h5>COLONNE B</h5>
+                    </li>
+                    <li>
+                        <h5>COLONNE C</h5>
+                    </li>
+                    <li>
+                        <h5>COLONNE D</h5>
+                    </li>
+                </div>
+                <div class="col-8 fond">
+                    <br>
+                    <br>
+                    <h4>CONTENEUR</h4>
+                    <div class="video">
+                        <br><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NOBTS7UQ1Oc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-            </header>
-            <main>
-                <div class="contour container1">
-                    <div class="row">
-
-                        <div class="col-4 colonneg">
-                            <div class="colonne">
-                                <li>COLONNE A</li>
-                                <li>COLONNE B</li>
-                                <li>COLONNE C</li>
-                                <li>COLONNE D</li>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <br>
-                            <h4>CONTENEUR</h4>
-                            <br>
-                            <div class="video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NOBTS7UQ1Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col bleu"></div>
-                    </div>
-            </main>
-            <footer>
-                <div class="contour container1">
-                    <div class="row">
-                        <div class="col-3 ft1"><span>footer 1</span>
-                        </div>
-                        <div class="col-3 ft2"><span>footer 2</span>
-                        </div>
-                        <div class="col-3 ft1"><span>footer 3</span>
-                        </div>
-                        <div class="col-3 ft2"><span>footer 4</span>
-                        </div>
-            </footer>
-
-            <!-- fin du conteneur -->
+                <br>
             </div>
+        </main>
+        <footer>
+            <!-- <div class="contour container bas"> -->
+            <div class="row">
+                <div class="col-3 ft1"><span>footer 1</span>
+                </div>
+                <div class="col-3 ft2"><span>footer 2</span>
+                </div>
+                <div class="col-3 ft1"><span>footer 3</span>
+                </div>
+                <div class="col-3 ft2"><span>footer 4</span>
+                </div>
             </div>
+        </footer>
 
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- fin du conteneur -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>

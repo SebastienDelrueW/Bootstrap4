@@ -11,13 +11,19 @@ autocentré - 960px de large - bordure 2px rgb(150,150,150) */
      background-color: rgb(240, 240, 240);
      font-weight: bold;
  }
+ /* .row {
+     width: 1260px;
+     margin: 0 auto;
+ } */
  
  .container {
      border: 2px solid grey;
  }
  
  .logo {
-     background-color: #6495ED;
+     background: url(../img/logo.png)no-repeat;
+     /* background-color: #6495ED; */
+     background-size: contain;
      width: 300px;
      height: 120px;
      color: white;
@@ -27,7 +33,9 @@ autocentré - 960px de large - bordure 2px rgb(150,150,150) */
  }
  
  .banniere {
-     background-color: rgb(17, 62, 144);
+     background: url(../img/immeuble.jpg)no-repeat;
+     background-size: cover;
+     /* background-color: rgb(17, 62, 144); */
      width: 600px;
      height: 120px;
      text-align: center;
@@ -86,14 +94,13 @@ autocentré - 960px de large - bordure 2px rgb(150,150,150) */
  
  li {
      height: 100px;
-     width: 300px;
-     margin: 20px;
+     /* margin: 20px; */
      border: 1px solid grey;
      background-color: rgb(255, 255, 255);
      color: grey;
      text-align: center;
      list-style: none;
-     border: 1px solid rgb(170, 169, 171);
+     border: 1px solid rgb(35, 7, 112);
  }
  
  h4 {
@@ -131,6 +138,23 @@ autocentré - 960px de large - bordure 2px rgb(150,150,150) */
  iframe {
      width: 70%;
  }
+ 
+ .rouge {
+     border: 1px solid red;
+ }
+ 
+ #monImage {
+     border: 1px solid rgb(55, 52, 52);
+     /* box-shadow: 8px 12px 2px 1px rgba(87, 84, 76, 0.2); */
+     width: 100%;
+     height: 100%;
+ }
+ /* #header {
+     background-image: url('../img/background.jpg');
+     background-size: 1970px;
+     background-repeat: no-repeat;
+     height: 500px;
+ } */
  /* 
 LOGO :
 300px de large - 120px de haut - fond: #6495ED
