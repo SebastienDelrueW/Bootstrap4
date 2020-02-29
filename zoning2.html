@@ -12,69 +12,71 @@
     <!-- style perso est chargé en second pour venir modifier le style de bootstrap.css après le chargement de celui ci -->
     <link rel="stylesheet" href="zoning2.css">
 </head>
-
-<!-- deux types de conteneurs adaptatifs (.container) ou fluide (.container fluid) -->
-<div class="contour container haut">
-    <header class="header">
-        <div class="row">
-            <div class="col-1 vert">
-            </div>
-            <div class="col-2 logo"><span>LOGO</span>
-            </div>
-            <div class="col-2 menu1"><a href="#">Menu 1</a>
-            </div>
-            <div class="col-2 menu2"><a href="#">Menu 2</a>
-            </div>
-            <div class="col-2 menu1"><a href="#">Menu 3</a>
-            </div>
-            <div class="col-2 menu2"><a href="#">Menu 4</a>
-            </div>
-            <div class="col-1 vert">
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="row col-12"></div>
-        <div class="contour container milieu">
-            <br>
+<div class="conteneur">
+    <!-- deux types de conteneurs adaptatifs (.container) ou fluide (.container fluid) -->
+    <div class="contour container haut">
+        <header class="header">
             <div class="row">
+                <div class="col-1 vert">
+                </div>
+                <div class="col-2 logo"><span>LOGO</span>
+                </div>
+                <div class="col-2 menu1"><a href="#">Menu 1</a>
+                </div>
+                <div class="col-2 menu2"><a href="#">Menu 2</a>
+                </div>
+                <div class="col-2 menu1"><a href="#">Menu 3</a>
+                </div>
+                <div class="col-2 menu2"><a href="#">Menu 4</a>
+                </div>
+                <div class="col-1 vert">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row col-12"></div>
+            <div class="contour container milieu">
                 <br>
-                <div class="col-5 co">
-                    <span> A</span>
+                <div class="row">
+                    <br>
+                    <div class="col-5 coa"><span>Block A</span>
+                    </div>
+                    <div class="col-5 cob">
+                        <!-- <span>Block B</span> -->
+                        <img src="img/1.jpg" alt="Texte alt" id="monImage">
+                    </div>
                 </div>
-                <div class="col-5 co"><span> B</span>
+                <br><br>
+                <div class="row">
+                    <div class="col-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.815382408013!2d2.252317115190952!3d48.842660079285935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67abf4dc94695%3A0x4d41b7cedc34007!2s1%20Rue%20Claude%20Farr%C3%A8re%2C%2075016%20Paris!5e0!3m2!1sfr!2sfr!4v1582882539955!5m2!1sfr!2sfr"
+                            width="" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="row col-12"></div>
+                    <hr>
+                    <div class="col-5 coc">
+                        <span>Block D</span>
+                    </div>
+                    <div class="col-5 cod"><span>Block E</span>
+                    </div>
+                </div>
+                <br>
+        </main>
+        <footer>
+            <div class="contour container bas">
+                <div class="row">
+                    <div class="col-1 vert">
+                    </div>
+                    <div class="col-5 ft1"><span>footer 1</span>
+                    </div>
+                    <div class="col-5 ft2"><span>footer 2</span>
+                    </div>
+                    <div class="col-1 vert">
+                    </div>
                 </div>
             </div>
-            <br><br>
-            <div class="row">
-                <div class="col-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.815382408013!2d2.252317115190952!3d48.842660079285935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67abf4dc94695%3A0x4d41b7cedc34007!2s1%20Rue%20Claude%20Farr%C3%A8re%2C%2075016%20Paris!5e0!3m2!1sfr!2sfr!4v1582882539955!5m2!1sfr!2sfr"
-                        width="" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-                <div class="row col-12"></div>
-                <hr>
-                <div class="col-5 co">
-                    <span> D</span>
-                </div>
-                <div class="col-5 co"><span> E</span>
-                </div>
-            </div>
-            <br>
-    </main>
-    <footer>
-        <div class="contour container bas">
-            <div class="row">
-                <div class="col-1 vert">
-                </div>
-                <div class="col-5 ft1"><span>footer 1</span>
-                </div>
-                <div class="col-5 ft2"><span>footer 2</span>
-                </div>
-                <div class="col-1 vert">
-                </div>
-            </div>
+        </footer>
         </div>
-    </footer>
     </div>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -84,7 +86,22 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        var diapo = 0; // en variable j'initialise à 0
 
+        function f() {
+            diapo += 1 // j'incrémente de 1
+            monImage.setAttribute('src', 'img/' + diapo + '.jpg'); // je confère , je définis , je mets en place et j'appelle les images par leur nom automatiquement 
+            if (diapo == 5) { // le nombre total d'images contenues dans mon slider
+                // clear interval permet de stopper sous la condtion que la variable est égal à 6
+                // clearInterval(timer) // le clear interval permet de stopper setInterval définit plus bas
+                diapo = 0;
+            }
+        }
+        var timer = window.setInterval('f()', 2000);
+        // 3000(milli seconde) c 'est le temps entre chaque photos
+        // window.setInterval('f()', 1000);
+    </script>
     </body>
 
 </html>
